@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanish's Image Resizer</title>
+    <link href="./style.css" rel="stylesheet">
+    <script src="./script.js" defer></script>
+
+    
+</head>
+<body>
+    <h1>Tanish's Image Resizer</h1>
+    <div class="container">
+        <input type="file" id="upload" accept="image/*">
+        <br>
+        <label>Width:</label>
+        <input type="number" id="width">
+        <br/>
+        <label>Height:</label>
+        <input type="number" id="height">
+        <br>
+        <label>File Size:</label>
+        <input type="number" id="sizeInput" min="1">
+        <select id="sizeUnit">
+            <option value="KB">KB</option>
+            <option value="MB" selected>MB</option>
+            <option value="GB">GB</option>
+        </select>
+        <br>
+        <button id="decreaseSize">-</button>
+        <button id="increaseSize">+</button>
+        <br>
+        <label>Quality:</label>
+        <input type="range" id="quality" min="0.1" max="1" step="0.1" value="0.8">
+        <span id="qualityValue">0.8</span>
+        <br>
+        <button id="resize">Download Resized Image</button>
+        <canvas id="canvas"></canvas>
+    </div>
+
+    <footer>@2025 Tanish Chavan | All rights reserved </footer>
+</body>
+</html>
